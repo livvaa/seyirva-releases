@@ -1,8 +1,8 @@
 {
-  "versionCode": 8,
-  "versionName": "0.8.0",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v0.8.0/Seyirva-0.8.0.apk",
-  "sizeBytes": 3714074,
-  "notes": "Kurulum izni akisi duzeltildi.\nKalici imzalama anahtarina gecildi.",
+  "versionCode": 9,
+  "versionName": "0.9.0",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v0.9.0/Seyirva-0.9.0.apk",
+  "sizeBytes": 3714982,
+  "notes": "Imza degisikligi artik acikca anlatiliyor.\nKurulum izni akisi duzeltildi.",
   "mandatory": true
 }
