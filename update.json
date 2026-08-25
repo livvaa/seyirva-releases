@@ -1,8 +1,8 @@
 {
-  "versionCode": 9,
-  "versionName": "0.9.0",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v0.9.0/Seyirva-0.9.0.apk",
-  "sizeBytes": 3714982,
-  "notes": "Imza degisikligi artik acikca anlatiliyor.\nKurulum izni akisi duzeltildi.",
+  "versionCode": 10,
+  "versionName": "1.0.0",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.0.0/Seyirva-1.0.0.apk",
+  "sizeBytes": 3714858,
+  "notes": "Ilk kararli surum.",
   "mandatory": true
 }
