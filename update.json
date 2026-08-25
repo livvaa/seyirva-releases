@@ -1,8 +1,8 @@
 {
-  "versionCode": 7,
-  "versionName": "0.7.0",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v0.7.0/Seyirva-0.7.0.apk",
-  "sizeBytes": 3713733,
-  "notes": "Ana ekran kartlari en cok izlenen kanallara gore siralaniyor.\nKumanda renkli tuslari: kirmizi altyazi, yesil ses, sari rehber, mavi canli.\nBilgi cubugunda CANLI / GECMIS YAYIN rozeti.\nOtomatik guncelleme.",
+  "versionCode": 8,
+  "versionName": "0.8.0",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v0.8.0/Seyirva-0.8.0.apk",
+  "sizeBytes": 3714074,
+  "notes": "Kurulum izni akisi duzeltildi.\nKalici imzalama anahtarina gecildi.",
   "mandatory": true
 }
