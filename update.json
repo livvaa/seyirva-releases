@@ -2,7 +2,7 @@
   "versionCode": 13,
   "versionName": "1.1.1",
   "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.1.1/Seyirva-1.1.1.apk",
-  "sizeBytes": 0,
+  "sizeBytes": 7227503,
   "notes": "Tablet ve telefonda kanal listesi kaydırılırken artık otomatik kapanma zamanlayıcısı sıfırlanıyor.",
   "mandatory": true
 }
