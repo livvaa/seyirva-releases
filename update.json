@@ -1,8 +1,8 @@
 {
-  "versionCode": 14,
-  "versionName": "1.1.2",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.1.2/Seyirva-1.1.2.apk",
-  "sizeBytes": 3725495,
-  "notes": "Google TV ana ekran kartları yeniden çalışıyor: kartlar yayının kendi görüntüsünü, kanal logosunu ve EPG bilgisini taşıyor, ilerleme çubuğu programın gerçek saatine göre doluyor. Bilgi çubuğu artık dokunmayı yutmuyor, EPG'si olmayan kanalda yerinden oynamıyor ve tablette çubuktan taşmıyor. Çevresel ışıklandırma tablette de kullanılabiliyor.",
+  "versionCode": 15,
+  "versionName": "1.1.3",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.1.3/Seyirva-1.1.3.apk",
+  "sizeBytes": 3726210,
+  "notes": "Google TV ana ekranındaki kartlar yeniden görünüyor. Yeni launcher poster görsellerini Chromium/Cronet ile indiriyor ve uygulama içi content:// adresini tanımıyordu; kartlar artık kanalın kendi logosunu kullanıyor, program ve kanal bilgisi kart yazılarından geliyor. Telefonda kamera çentiği arayüz yerleşimine katıldı: kurulum ekranında başlık artık kesilmiyor ve kamera deliği kanal listesinin üstüne oturmuyor.",
   "mandatory": true
 }
