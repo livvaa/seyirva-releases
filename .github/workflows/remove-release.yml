@@ -1,0 +1,72 @@
+name: Bozuk sürümü kaldır
+
+# Yayımlanmış bir sürümü ve etiketini siler. Bunun için yazıldı: v1.1.1 debug
+# anahtarıyla imzalanmış `app-debug.apk` olarak yayımlandı. Kimse kuramaz — yüklü
+# bir Seyirva'nın üstüne gitmez, çünkü imzası farklı — ama Releases sayfasında
+# "en son sürüm" olarak durduğu için indirilmeye devam eder.
+#
+# Actions → Bozuk sürümü kaldır → Run workflow → tag: v1.1.1, confirm: v1.1.1
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Silinecek sürümün etiketi (örn. v1.1.1)'
+        type: string
+        required: true
+      confirm:
+        description: 'Aynı etiketi bir kez daha yazın'
+        type: string
+        required: true
+      delete_tag:
+        description: 'Git etiketini de sil'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  remove:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Emniyet kontrolleri
+        env:
+          TAG: ${{ inputs.tag }}
+          CONFIRM: ${{ inputs.confirm }}
+        run: |
+          if [ "$TAG" != "$CONFIRM" ]; then
+            echo "::error::Etiket doğrulaması tutmadı: '$TAG' ile '$CONFIRM' aynı değil."
+            exit 1
+          fi
+          current=$(python3 -c "import json;print(json.load(open('update.json'))['versionName'])")
+          if [ "$TAG" = "v$current" ]; then
+            echo "::error::update.json şu anda $TAG sürümünü gösteriyor. Önce update.json'u çalışan bir sürüme çevirin, yoksa hiçbir cihaz güncelleme indiremez."
+            exit 1
+          fi
+          echo "update.json v$current sürümünde; $TAG silinebilir."
+
+      - name: Sürümü sil
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          if ! gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "::notice::$TAG zaten yok, yapılacak bir şey kalmadı."
+            exit 0
+          fi
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json tagName,assets
+          if [ "${{ inputs.delete_tag }}" = "true" ]; then
+            gh release delete "$TAG" --repo "$GITHUB_REPOSITORY" --cleanup-tag --yes
+          else
+            gh release delete "$TAG" --repo "$GITHUB_REPOSITORY" --yes
+          fi
+          echo "$TAG silindi."
+
+      - name: Kalan sürümler
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release list --repo "$GITHUB_REPOSITORY" --limit 20

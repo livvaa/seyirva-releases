@@ -1,0 +1,111 @@
+name: update.json doğrulama
+
+# update.json cihazlara ne kuracaklarını söyleyen tek dosya. Yanlışsa güncelleme
+# tamamen durur, üstelik sessizce. 1.1.1'de tam olarak bu oldu: dosya adı
+# yayımlanan varlıkla uyuşmuyordu (404) ve APK debug anahtarıyla imzalıydı.
+#
+# Bu iş, manifest'in gösterdiği APK'yı gerçekten indirir ve üç şeyi kanıtlar:
+#   1. adres çalışıyor,
+#   2. boyut sizeBytes ile bire bir aynı (uygulama farklıysa kurulumu reddeder),
+#   3. imza sertifikası yayımlanmış her Seyirva sürümündekiyle aynı.
+
+on:
+  push:
+    paths:
+      - 'update.json'
+      - '.github/workflows/validate-update-manifest.yml'
+  pull_request:
+    paths:
+      - 'update.json'
+  schedule:
+    # Yayımlanmış bir varlık sonradan silinirse günlük kontrol yakalar.
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    env:
+      EXPECTED_SIGNER_SHA256: 'ce1f1df5d0916d8f049cfd620f1c2161d198e89266980d7d53e6f4b4fc1a59ea'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Manifest biçimi
+        run: |
+          python3 - <<'PY'
+          import json, sys
+
+          manifest = json.load(open('update.json'))
+          problems = []
+
+          def need(key, kind):
+              if key not in manifest:
+                  problems.append(f'{key} eksik')
+              elif not isinstance(manifest[key], kind):
+                  problems.append(f'{key} yanlış türde: {type(manifest[key]).__name__}')
+
+          need('versionCode', int)
+          need('versionName', str)
+          need('apkUrl', str)
+          need('sizeBytes', int)
+          need('notes', str)
+          need('mandatory', bool)
+
+          url = manifest.get('apkUrl', '')
+          if not url.startswith('https://'):
+              problems.append('apkUrl https:// ile başlamalı — uygulama başka şemayı kabul etmez')
+          if manifest.get('sizeBytes', 0) <= 0:
+              problems.append('sizeBytes sıfır olamaz — kurulum boyut kontrolünde takılır')
+
+          version = manifest.get('versionName', '')
+          if version and f'/v{version}/' not in url:
+              problems.append(f'apkUrl v{version} etiketini göstermiyor: {url}')
+
+          if problems:
+              print('\n'.join(f'::error::{p}' for p in problems))
+              sys.exit(1)
+          print(json.dumps(manifest, ensure_ascii=False, indent=2))
+          PY
+
+      - name: APK'yı indir ve boyutu karşılaştır
+        run: |
+          url=$(python3 -c "import json;print(json.load(open('update.json'))['apkUrl'])")
+          expected=$(python3 -c "import json;print(json.load(open('update.json'))['sizeBytes'])")
+          echo "İndiriliyor: $url"
+          # Sürüm varlıkları HEAD isteğine 401 dönebiliyor, bu yüzden gerçekten indiriyoruz.
+          code=$(curl -sSL -w '%{http_code}' -o published.apk "$url")
+          if [ "$code" != "200" ]; then
+            echo "::error::apkUrl HTTP $code döndü. Cihazlar bu güncellemeyi indiremez."
+            exit 1
+          fi
+          actual=$(stat -c%s published.apk)
+          echo "sizeBytes: $expected, indirilen: $actual"
+          if [ "$actual" != "$expected" ]; then
+            echo "::error::Boyut tutmuyor. AppUpdaterPlugin indirmeyi 'beklenen boyutta değil' diyerek atar."
+            exit 1
+          fi
+
+      - name: İmza sertifikasını doğrula
+        run: |
+          unzip -o -q published.apk 'META-INF/*.RSA' -d certs || true
+          block=$(ls certs/META-INF/*.RSA 2>/dev/null | head -n 1)
+          if [ -z "$block" ]; then
+            echo "::error::APK'da v1 imza bloğu yok, sertifika okunamadı. apksigner ile elle kontrol edin."
+            exit 1
+          fi
+          openssl pkcs7 -inform DER -in "$block" -print_certs -out cert.pem
+          actual=$(openssl x509 -in cert.pem -noout -fingerprint -sha256 \
+            | sed 's/.*=//' | tr -d ':' | tr 'A-F' 'a-f')
+          openssl x509 -in cert.pem -noout -subject
+          echo "beklenen: $EXPECTED_SIGNER_SHA256"
+          echo "bulunan:  $actual"
+          if [ "$actual" != "$EXPECTED_SIGNER_SHA256" ]; then
+            echo "::error::Bu APK Seyirva anahtarıyla imzalı değil. Yüklü sürümü olan cihazlar 'paket çakışması' hatasıyla reddeder ve kullanıcının uygulamayı kaldırması gerekir."
+            exit 1
+          fi
+          echo "İmza doğru: yayımlanmış tüm Seyirva sürümleriyle aynı sertifika."

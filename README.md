@@ -110,6 +110,7 @@ Güncelleme zorunludur — yan yüklenen bir uygulamada atlanabilen güncelleme 
 | "Paket çakışması" hatası | Uygulamayı kaldırıp yeniden kurun (imza değişikliği) |
 | Kanal açılmıyor | Başka bir kanala geçip tekrar deneyin; yayın kaynağı geçici olarak çökebilir |
 | Güncelleme kurulamıyor | Ayarlar → Uygulamalar → Seyirva → "Bilinmeyen uygulamalara izin ver" |
+| 1.1.1 kurulu ve güncelleme gelmiyor | 1.1.1 yanlış anahtarla imzalanmıştı ve geri çekildi. Uygulamayı kaldırıp Releases'teki en son sürümü kurun; sonraki güncellemeler yine kendiliğinden gelir |
 
 ## Yasal Uyarı
 
@@ -135,10 +136,34 @@ Bu depodaki `update.json`, uygulamanın açılışta okuduğu güncelleme bildir
 
 ### Yeni sürüm yayınlama
 
-1. Kaynak depoda sürümü yükselt, `assembleRelease` ile imzalı APK üret.
-2. Bu depoda `vX.Y.Z` etiketiyle bir release aç, APK'yı `Seyirva-X.Y.Z.apk` adıyla ekle.
-3. `update.json`'u yeni `versionCode`, `versionName`, `apkUrl` ve `sizeBytes` ile güncelle.
+Elle yapmayın. Kaynak deposundaki (`livvaa/seyirva`) **Android APK** workflow'unu
+`publish` seçeneğiyle çalıştırın: APK'yı üretir, imzasını doğrular, bu depoda release
+açar ve `update.json`'u kendi ürettiği dosyadan yazar. Böylece dosya adı, boyut ve
+sürüm birbirinden ayrılamaz.
 
-APK'lar her zaman aynı anahtarla imzalanmalıdır; imza değişirse cihazlar güncellemeyi reddeder ve kullanıcının elle kaldırıp kurması gerekir.
+### Bu depodaki workflow'lar
+
+| Workflow | Ne yapar |
+|---|---|
+| **update.json doğrulama** | `update.json` her değiştiğinde ve her gün, manifest'in gösterdiği APK'yı indirir; adresi, boyutu ve imza sertifikasını kontrol eder |
+| **Bozuk sürümü kaldır** | Elle çalıştırılır; verilen etiketin release'ini ve etiketini siler. `update.json` o sürümü gösteriyorsa reddeder |
+
+### İmza — en kritik kural
+
+Yayımlanan her APK **aynı** anahtarla imzalanmalıdır:
+
+```
+SHA-256  CE:1F:1D:F5:D0:91:6D:8F:04:9C:FD:62:0F:1C:21:61:
+         D1:98:E8:92:66:98:0D:7D:53:E6:F4:B4:FC:1A:59:EA
+```
+
+İmza değişirse Android güncellemeyi "paket çakışması" diyerek reddeder ve kullanıcının
+uygulamayı elle kaldırıp yeniden kurması gerekir. Uygulama bu durumu kendisi fark edip
+açıklar, ama düzeltemez.
+
+Sürüm 1.1.1 tam olarak bu yüzden geri çekildi: yayımlanan dosya `app-debug.apk` idi,
+yani **debug anahtarıyla** imzalıydı (`CN=Android Debug`), üstelik `update.json` hiç var
+olmayan bir `Seyirva-1.1.1.apk` adresini gösteriyordu. İkisi de artık workflow'lar
+tarafından yakalanır.
 
 </details>
