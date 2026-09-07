@@ -1,8 +1,8 @@
 {
-  "versionCode": 12,
-  "versionName": "1.1.0",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.1.0/Seyirva-1.1.0.apk",
-  "sizeBytes": 3719124,
-  "notes": "Telefon arayüzü telefon ekranına göre küçültüldü; bilgi çubuğu yeniden ortalanmış bir kapsül. Yeni: Ayarlar > Çevresel Işıklandırma — yayının rengi ekranın yan boşluklarına yayılır.",
+  "versionCode": 14,
+  "versionName": "1.1.2",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.1.2/Seyirva-1.1.2.apk",
+  "sizeBytes": 3725495,
+  "notes": "Google TV ana ekran kartları yeniden çalışıyor: kartlar yayının kendi görüntüsünü, kanal logosunu ve EPG bilgisini taşıyor, ilerleme çubuğu programın gerçek saatine göre doluyor. Bilgi çubuğu artık dokunmayı yutmuyor, EPG'si olmayan kanalda yerinden oynamıyor ve tablette çubuktan taşmıyor. Çevresel ışıklandırma tablette de kullanılabiliyor.",
   "mandatory": true
 }
