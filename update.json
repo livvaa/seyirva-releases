@@ -1,8 +1,8 @@
 {
-  "versionCode": 25,
-  "versionName": "1.2.3",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.2.3/Seyirva-1.2.3.apk",
-  "sizeBytes": 3747951,
-  "notes": "Ses ve altyazı simgeleri kaynaktan bağımsız gösteriliyor: kanalın izleri hangi kaynakta olursa olsun bilgi çubuğunda ve sağ üstteki rozette görünüyor. Rozet simgeleri büyütüldü.",
+  "versionCode": 27,
+  "versionName": "1.2.5",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.2.5/Seyirva-1.2.5.apk",
+  "sizeBytes": 3748190,
+  "notes": "Uydunun ses dilleri, uyduya hiç geçmeden yayın akışından okunuyor. Rozet simgeleri büyüdü ve arkasına köşeden açılan koyu degrade geldi; bilgi çubuğu açıkken rozet erteleniyor. Bilgi çubuğunda canlı göstergesi ve iz simgeleri kendi sütununa alındı.",
   "mandatory": true
 }
