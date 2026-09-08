@@ -1,8 +1,8 @@
 {
-  "versionCode": 20,
-  "versionName": "1.1.8",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.1.8/Seyirva-1.1.8.apk",
-  "sizeBytes": 3747068,
-  "notes": "Uydu yayınlarının ses ve altyazı izleri okunuyor: yeşil tuşun menüsünden seçilebiliyor, bilgi çubuğunda simgeyle ve kanal açılışında köşede gösteriliyor. Sanal HDR varsayılan açık. Kanal logoları yerelde saklanıyor, internet yokken de görünüyor.",
+  "versionCode": 21,
+  "versionName": "1.1.9",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.1.9/Seyirva-1.1.9.apk",
+  "sizeBytes": 3747716,
+  "notes": "Ses ve altyazı menüsünde kumanda artık altyazı bölümüne de iniyor. Menü, öteki kaynakta bulunan ses ve altyazıyı gösterip o kaynağa geçmeyi teklif ediyor. Uydu yayınlarının ses ve altyazı izleri okunuyor. Köşedeki destek rozeti kanal açıldıktan birkaç saniye sonra beliriyor. Sanal HDR varsayılan açık.",
   "mandatory": true
 }
