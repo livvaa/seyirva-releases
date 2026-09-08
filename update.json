@@ -1,8 +1,8 @@
 {
-  "versionCode": 28,
-  "versionName": "1.2.6",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.2.6/Seyirva-1.2.6.apk",
-  "sizeBytes": 3748208,
-  "notes": "Köşe rozetleri alt alta dizildi. Bilgi çubuğundaki geçmiş yayın göstergesi kısaldı; ekranı boydan boya kesen sarı şerit kalktı.",
+  "versionCode": 30,
+  "versionName": "1.2.8",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.2.8/Seyirva-1.2.8.apk",
+  "sizeBytes": 3748409,
+  "notes": "Kalite tavanı artık panelin gerçek çözünürlüğüne göre hesaplanıyor; 4K televizyonda 1080 üstü varyantlar elenmiyor. Bilgi çubuğundaki veri kutuları iki sütuna geçti, geçmiş yayın göstergesi kısaldı, köşe rozetleri alt alta dizildi.",
   "mandatory": true
 }
