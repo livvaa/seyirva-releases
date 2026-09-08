@@ -1,8 +1,8 @@
 {
-  "versionCode": 23,
-  "versionName": "1.2.1",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.2.1/Seyirva-1.2.1.apk",
-  "sizeBytes": 3747880,
-  "notes": "Destek rozetleri sağ üstte, kutusuz; beş saniye sonra yumuşak açılıp on saniye kalıyor. Ses ve altyazı menüsü öteki kaynağın taşıdığı izleri de aynı listede gösteriyor, seçilen izi sağlayan kaynağa arka planda geçiliyor. Kumanda menüde altyazı bölümüne de iniyor.",
+  "versionCode": 24,
+  "versionName": "1.2.2",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.2.2/Seyirva-1.2.2.apk",
+  "sizeBytes": 3747872,
+  "notes": "Ses ve altyazı destek rozetlerinin simgeleri büyütüldü.",
   "mandatory": true
 }
