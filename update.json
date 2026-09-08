@@ -2,7 +2,7 @@
   "versionCode": 18,
   "versionName": "1.1.6",
   "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.1.6/Seyirva-1.1.6.apk",
-  "sizeBytes": 3745354,
-  "notes": "Uydu kanal listesi izni her açılışta kontrol ediliyor; izin yoksa isteniyor. Temiz kurulumda uydu tarafı sessizce kapalı kalıyor, uydusu olan kanallar tek kaynaklı görünüyordu. Kanal numaraları artık Türksat'ın resmî TKGS numarası ve yalnızca uydudan gelen kanallar da sıraya giriyor. Uygulama 1 numaralı kanaldan açılıyor. Komşu kanal, o kanalda açılacak sunucudan ısıtılıyor; zap sonrası siyah ekran beklemesi kısalıyor. Kanal logoları yerelde saklanıyor, internet yokken de görünüyor. Liste yazıları ve logoları büyüdü.",
+  "sizeBytes": 3745677,
+  "notes": "Uydu kanal listesi izni her açılışta kontrol ediliyor. Kanal numaraları artık Türksat'ın resmî TKGS numarası; yalnızca uydudan gelen kanallar da sıraya giriyor. Uygulama 1 numaralı kanaldan açılıyor. Komşu kanal, o kanalda açılacak sunucudan ısıtılıyor. Kanal logoları yerelde saklanıyor ve internet yokken de görünüyor. Ayarlara Sanal HDR eklendi. Liste yazıları ve logoları büyüdü.",
   "mandatory": true
 }
