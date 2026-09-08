@@ -1,8 +1,8 @@
 {
-  "versionCode": 27,
-  "versionName": "1.2.5",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.2.5/Seyirva-1.2.5.apk",
-  "sizeBytes": 3748190,
-  "notes": "Uydunun ses dilleri, uyduya hiç geçmeden yayın akışından okunuyor. Rozet simgeleri büyüdü ve arkasına köşeden açılan koyu degrade geldi; bilgi çubuğu açıkken rozet erteleniyor. Bilgi çubuğunda canlı göstergesi ve iz simgeleri kendi sütununa alındı.",
+  "versionCode": 28,
+  "versionName": "1.2.6",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.2.6/Seyirva-1.2.6.apk",
+  "sizeBytes": 3748208,
+  "notes": "Köşe rozetleri alt alta dizildi. Bilgi çubuğundaki geçmiş yayın göstergesi kısaldı; ekranı boydan boya kesen sarı şerit kalktı.",
   "mandatory": true
 }
