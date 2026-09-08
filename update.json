@@ -1,8 +1,8 @@
 {
-  "versionCode": 55,
-  "versionName": "1.5.3",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.5.3/Seyirva-1.5.3.apk",
-  "sizeBytes": 3748981,
-  "notes": "TRT 1 gibi 1440p yayınlar artık gerçekten 1440p açılıyor: kalite seçimini kısıtlayan tampon bütçesi genişletildi, seviye seçimi yeniden yayının kendi ölçümüne bırakıldı. Rehberden geçmiş bir programa geçerken önce canlının görünüp sonra atlaması giderildi. Teknik katmanda oynatılabilir varyant sayısı gösteriliyor.",
+  "versionCode": 56,
+  "versionName": "1.5.4",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.5.4/Seyirva-1.5.4.apk",
+  "sizeBytes": 3749330,
+  "notes": "Rehber artık yalnızca yayının geri sarma penceresine gerçekten sığan programları işaretliyor; pencerenin dışındaki bir programa basmak kanalı canlı açıyor, boş vaat kalmıyor. Geçmiş yayın izlenirken oynatılan anın saati sol altta duruyor. TRT 1 gibi 1440p yayınlar gerçekten 1440p açılıyor.",
   "mandatory": true
 }
