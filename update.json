@@ -1,8 +1,8 @@
 {
-  "versionCode": 30,
-  "versionName": "1.2.8",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.2.8/Seyirva-1.2.8.apk",
-  "sizeBytes": 3748409,
-  "notes": "Kalite tavanı artık panelin gerçek çözünürlüğüne göre hesaplanıyor; 4K televizyonda 1080 üstü varyantlar elenmiyor. Bilgi çubuğundaki veri kutuları iki sütuna geçti, geçmiş yayın göstergesi kısaldı, köşe rozetleri alt alta dizildi.",
+  "versionCode": 34,
+  "versionName": "1.3.2",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.3.2/Seyirva-1.3.2.apk",
+  "sizeBytes": 3748773,
+  "notes": "Kaynaklar gerçek kalite kademelerine göre havuzlanıyor: en yüksek kalite önce, kademe içinde rastgele. Kalite tavanı panelin çözünürlüğüne göre. Rehberde geri dönülebilir programlar kehribar renkte ve oynat simgeli; henüz yayınlanmamış programlar işaretlenmiyor.",
   "mandatory": true
 }
