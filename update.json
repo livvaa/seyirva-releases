@@ -1,8 +1,8 @@
 {
-  "versionCode": 43,
-  "versionName": "1.4.1",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.4.1/Seyirva-1.4.1.apk",
-  "sizeBytes": 3748700,
-  "notes": "Yayın kalitesinin önündeki yapay sınırlar kaldırıldı; sınırı artık cihazın kendi ölçümü çiziyor. Bilgi çubuğunda kanal ve program alanı genişledi, veri kutuları sabit yerleşime kavuştu. Köşe rozetleri yalnızca yayın ekranındayken görünüyor. Rehberde geri dönülebilir programlar kehribar renkte ve oynat simgeli.",
+  "versionCode": 45,
+  "versionName": "1.4.3",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.4.3/Seyirva-1.4.3.apk",
+  "sizeBytes": 3748627,
+  "notes": "Oynatıcı ayarları eski hâline döndürüldü. Çevrimdışı uyarısı internet geri gelince kayboluyor. Bilgi çubuğunda kanal ve program alanı geniş, veri kutuları sabit yerleşimde. Rehberde geri dönülebilir programlar kehribar renkte ve oynat simgeli.",
   "mandatory": true
 }
