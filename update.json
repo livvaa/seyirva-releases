@@ -1,8 +1,8 @@
 {
-  "versionCode": 19,
-  "versionName": "1.1.7",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.1.7/Seyirva-1.1.7.apk",
-  "sizeBytes": 3746158,
-  "notes": "Uydudan açılan kanalda ekran boş kalmıyor: kanalın adıyla birlikte açılış bilgisi görünüyor. Ses ve altyazı desteği kanal açılınca köşede, bilgi çubuğunda simgeyle gösteriliyor. Ayarlara Sanal HDR eklendi. Kanal logoları yerelde saklanıyor ve internet yokken de görünüyor. Kanal numaraları Türksat'ın resmî TKGS numarası.",
+  "versionCode": 20,
+  "versionName": "1.1.8",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.1.8/Seyirva-1.1.8.apk",
+  "sizeBytes": 3747068,
+  "notes": "Uydu yayınlarının ses ve altyazı izleri okunuyor: yeşil tuşun menüsünden seçilebiliyor, bilgi çubuğunda simgeyle ve kanal açılışında köşede gösteriliyor. Sanal HDR varsayılan açık. Kanal logoları yerelde saklanıyor, internet yokken de görünüyor.",
   "mandatory": true
 }
