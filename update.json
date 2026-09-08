@@ -1,8 +1,8 @@
 {
-  "versionCode": 24,
-  "versionName": "1.2.2",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.2.2/Seyirva-1.2.2.apk",
-  "sizeBytes": 3747872,
-  "notes": "Ses ve altyazı destek rozetlerinin simgeleri büyütüldü.",
+  "versionCode": 25,
+  "versionName": "1.2.3",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.2.3/Seyirva-1.2.3.apk",
+  "sizeBytes": 3747951,
+  "notes": "Ses ve altyazı simgeleri kaynaktan bağımsız gösteriliyor: kanalın izleri hangi kaynakta olursa olsun bilgi çubuğunda ve sağ üstteki rozette görünüyor. Rozet simgeleri büyütüldü.",
   "mandatory": true
 }
