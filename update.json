@@ -1,8 +1,8 @@
 {
-  "versionCode": 34,
-  "versionName": "1.3.2",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.3.2/Seyirva-1.3.2.apk",
-  "sizeBytes": 3748773,
-  "notes": "Kaynaklar gerçek kalite kademelerine göre havuzlanıyor: en yüksek kalite önce, kademe içinde rastgele. Kalite tavanı panelin çözünürlüğüne göre. Rehberde geri dönülebilir programlar kehribar renkte ve oynat simgeli; henüz yayınlanmamış programlar işaretlenmiyor.",
+  "versionCode": 35,
+  "versionName": "1.3.3",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.3.3/Seyirva-1.3.3.apk",
+  "sizeBytes": 3748753,
+  "notes": "Bilgi çubuğundaki küçük veri kutuları tek satır: simge ve değer yan yana, çözünürlük kutusu yanlarında iki satır boyu duruyor.",
   "mandatory": true
 }
