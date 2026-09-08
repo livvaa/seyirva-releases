@@ -1,8 +1,8 @@
 {
-  "versionCode": 35,
-  "versionName": "1.3.3",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.3.3/Seyirva-1.3.3.apk",
-  "sizeBytes": 3748753,
-  "notes": "Bilgi çubuğundaki küçük veri kutuları tek satır: simge ve değer yan yana, çözünürlük kutusu yanlarında iki satır boyu duruyor.",
+  "versionCode": 43,
+  "versionName": "1.4.1",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.4.1/Seyirva-1.4.1.apk",
+  "sizeBytes": 3748700,
+  "notes": "Yayın kalitesinin önündeki yapay sınırlar kaldırıldı; sınırı artık cihazın kendi ölçümü çiziyor. Bilgi çubuğunda kanal ve program alanı genişledi, veri kutuları sabit yerleşime kavuştu. Köşe rozetleri yalnızca yayın ekranındayken görünüyor. Rehberde geri dönülebilir programlar kehribar renkte ve oynat simgeli.",
   "mandatory": true
 }
