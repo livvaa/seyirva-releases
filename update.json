@@ -1,8 +1,8 @@
 {
-  "versionCode": 45,
-  "versionName": "1.4.3",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.4.3/Seyirva-1.4.3.apk",
-  "sizeBytes": 3748627,
-  "notes": "Oynatıcı ayarları eski hâline döndürüldü. Çevrimdışı uyarısı internet geri gelince kayboluyor. Bilgi çubuğunda kanal ve program alanı geniş, veri kutuları sabit yerleşimde. Rehberde geri dönülebilir programlar kehribar renkte ve oynat simgeli.",
+  "versionCode": 55,
+  "versionName": "1.5.3",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.5.3/Seyirva-1.5.3.apk",
+  "sizeBytes": 3748981,
+  "notes": "TRT 1 gibi 1440p yayınlar artık gerçekten 1440p açılıyor: kalite seçimini kısıtlayan tampon bütçesi genişletildi, seviye seçimi yeniden yayının kendi ölçümüne bırakıldı. Rehberden geçmiş bir programa geçerken önce canlının görünüp sonra atlaması giderildi. Teknik katmanda oynatılabilir varyant sayısı gösteriliyor.",
   "mandatory": true
 }
