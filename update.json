@@ -1,8 +1,8 @@
 {
-  "versionCode": 56,
-  "versionName": "1.5.4",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.5.4/Seyirva-1.5.4.apk",
-  "sizeBytes": 3749330,
-  "notes": "Rehber artık yalnızca yayının geri sarma penceresine gerçekten sığan programları işaretliyor; pencerenin dışındaki bir programa basmak kanalı canlı açıyor, boş vaat kalmıyor. Geçmiş yayın izlenirken oynatılan anın saati sol altta duruyor. TRT 1 gibi 1440p yayınlar gerçekten 1440p açılıyor.",
+  "versionCode": 57,
+  "versionName": "1.5.5",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.5.5/Seyirva-1.5.5.apk",
+  "sizeBytes": 3750390,
+  "notes": "Kalite bir kez düştüğünde orada kalmıyor: en yüksek varyant tampon uygunken düzenli olarak yeniden deneniyor, hat yetmezse kendiliğinden geri iniyor. Bilgi çubuğu açıkken sol/sağ oklar beşer saniye sarıyor, basılı tutuldukça hızlanıyor ve ekranın kenarında süre görünüyor. Ses ve altyazı rozeti kanal logosunun üstüne gelmiyor. Zap sırasında komşu kanallar önden hazırlanıyor.",
   "mandatory": true
 }
