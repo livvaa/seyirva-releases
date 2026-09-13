@@ -1,8 +1,7 @@
 {
-  "versionCode": 57,
-  "versionName": "1.5.5",
-  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.5.5/Seyirva-1.5.5.apk",
-  "sizeBytes": 3750802,
-  "notes": "Kalite bir kez düştüğünde orada kalmıyor: en yüksek varyant tampon uygunken düzenli olarak yeniden deneniyor, hat yetmezse kendiliğinden geri iniyor. Bilgi çubuğu açıkken sol/sağ oklar beşer saniye sarıyor, basılı tutuldukça hızlanıyor ve ekranın kenarında süre görünüyor. Ses ve altyazı rozeti kanal logosunun üstüne gelmiyor. Zap sırasında komşu kanallar önden hazırlanıyor.",
-  "mandatory": true
+  "version": "1.5.6",
+  "releaseNotes": "- Üst üste binen yayın akışı hataları çözüldü.",
+  "apkUrl": "https://raw.githubusercontent.com/livvaa/seyirva-releases/main/app-release.apk",
+  "mandatory": true,
+  "sizeBytes": 3750949
 }
