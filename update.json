@@ -1,8 +1,8 @@
 {
-  "version": "1.5.7",
+  "version": "1.5.8",
   "mandatory": true,
   "apkUrl": "https://raw.githubusercontent.com/livvaa/seyirva-releases/main/app-release.apk",
-  "sizeBytes": 3751141,
-  "releaseNotes": "- Google Analytics eklendi.\n- Uygulama acilis hizi iyilestirildi.\n- Arayuz cilalandi.",
-  "versionCode": 10507
+  "sizeBytes": 3752433,
+  "releaseNotes": "- Teknik arayüz (Meraklısına) tamamen yenilendi ve kısaltıldı.\n- TV saat ve tarih kaymaları için uyarı rozeti eklendi.\n- Analitik sistemi WebView (localStorage) yapısına geçirildi.\n- İlk açılıştaki kanal seçim sorunu giderildi.",
+  "versionCode": 10508
 }
