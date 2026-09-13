@@ -1,7 +1,9 @@
 {
-  "version": "1.5.6",
+  "version": "1.5.7",
   "mandatory": true,
   "apkUrl": "https://raw.githubusercontent.com/livvaa/seyirva-releases/main/app-release.apk",
-  "sizeBytes": 3750949,
-  "releaseNotes": "- EPG sorunlari ve iptv acilis suresi duzeltildi."
+  "sizeBytes": 3751141,
+  "releaseNotes": "- Google Analytics eklendi.
+- Uygulama acilis hizi iyilestirildi.
+- Arayuz cilalandi."
 }
