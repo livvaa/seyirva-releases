@@ -3,5 +3,6 @@
   "mandatory": true,
   "apkUrl": "https://raw.githubusercontent.com/livvaa/seyirva-releases/main/app-release.apk",
   "sizeBytes": 3751141,
-  "releaseNotes": "- Google Analytics eklendi.\n- Uygulama acilis hizi iyilestirildi.\n- Arayuz cilalandi."
+  "releaseNotes": "- Google Analytics eklendi.\n- Uygulama acilis hizi iyilestirildi.\n- Arayuz cilalandi.",
+  "versionCode": 10507
 }
