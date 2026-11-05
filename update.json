@@ -1,8 +1,10 @@
 {
-  "version": "1.5.9",
-  "mandatory": true,
-  "apkUrl": "https://raw.githubusercontent.com/livvaa/seyirva-releases/main/app-release.apk",
-  "sizeBytes": 3752441,
-  "releaseNotes": "- Teknik arayüz (Meraklısına) tamamen yenilendi ve kısaltıldı.\n- TV saat ve tarih kaymaları için uyarı rozeti eklendi.\n- Analitik sistemi WebView (localStorage) yapısına geçirildi.\n- İlk açılıştaki kanal seçim sorunu giderildi.",
-  "versionCode": 10509
+  "versionCode": 10600,
+  "versionName": "1.6.0",
+  "version": "1.6.0",
+  "apkUrl": "https://github.com/livvaa/seyirva-releases/releases/download/v1.6.0/app-release.apk",
+  "sizeBytes": 4247163,
+  "notes": "- Yeni arayüz: sade, yayıncı tarzı tasarım; kumandayla daha net odak, ekran kenarlarında güvenli boşluk.\n- Google lisansı olmayan ve WebView'ı eski TV kutularında açılışta siyah ekranda kalma sorunu giderildi.\n- Zayıf TV'lerde (1–2 GB RAM) yayın donması ve menülerde kasma giderildi; kalite cihaza göre otomatik sınırlanıyor.\n- Ayarlara DVB (uydu/karasal) ve IPTV kaynaklarını ayrı ayrı açıp kapatma eklendi.\n- Ses ve altyazı göstergeleri, \"yayın açılamadı\" ekranı ve ana ekran kartları yenilendi.",
+  "releaseNotes": "- Yeni arayüz: sade, yayıncı tarzı tasarım; kumandayla daha net odak, ekran kenarlarında güvenli boşluk.\n- Google lisansı olmayan ve WebView'ı eski TV kutularında açılışta siyah ekranda kalma sorunu giderildi.\n- Zayıf TV'lerde (1–2 GB RAM) yayın donması ve menülerde kasma giderildi; kalite cihaza göre otomatik sınırlanıyor.\n- Ayarlara DVB (uydu/karasal) ve IPTV kaynaklarını ayrı ayrı açıp kapatma eklendi.\n- Ses ve altyazı göstergeleri, \"yayın açılamadı\" ekranı ve ana ekran kartları yenilendi.",
+  "mandatory": true
 }
